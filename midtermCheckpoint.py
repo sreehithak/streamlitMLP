@@ -152,7 +152,8 @@ def midtermPage():
     st.table(df)
 
     #gantt chart 
-    st.write("[https://docs.google.com/spreadsheets/d/1pWP95MfCxjXpDKaHLz4uDdDxCCM1txiEijmd1BK4PhM/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1pWP95MfCxjXpDKaHLz4uDdDxCCM1txiEijmd1BK4PhM/edit?usp=sharing)")
+    
+    st.write("[Gantt Chart](https://docs.google.com/spreadsheets/d/1pWP95MfCxjXpDKaHLz4uDdDxCCM1txiEijmd1BK4PhM/edit?usp=sharing)")
 
             
     if __name__ == "__main__":
