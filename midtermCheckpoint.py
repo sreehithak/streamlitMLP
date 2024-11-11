@@ -29,6 +29,22 @@ def midtermPage():
     st.header("Visualizations")
     scatterplot(regression_data)
     st.caption("Scatter Plot")
+
+st.write(Results and Discussion
+
+Quantitative Metrics:
+Mean Squared Error (MSE): 2.93
+Mean Absolute Error (MAE): 0.93
+R-squared Score: 0.81
+These metrics provide a quantitative summary of the model's performance. An R-squared score of 0.81 indicates that 81% of the variance in the actual grades is explained by our model, which is relatively high. The MSE and MAE values suggest that, on average, our predictions deviate slightly from the actual values, with the model having a small margin of error. The relatively low MAE indicates that the absolute errors are minimal, suggesting that the model is consistently accurate without large deviations.
+Analysis of Model Performance: The model performs well overall, as shown by the R-squared score and the alignment between the predicted and actual values in the visualization. However, some discrepancies remain, particularly in areas where the predicted grades diverge slightly from the actual grades. The relatively low MSE suggests that larger errors (outliers) are minimized, while the low MAE indicates that the model is accurate across most data points. The model’s performance may stem from its ability to capture linear relationships in the data, but limitations could arise if the underlying relationship is non-linear or if there are influential outliers.
+Next Steps:
+Data Enhancement: We will consider collecting more data or engineering additional features that may capture further nuances influencing student grades. This could improve our model’s ability to generalize to different patterns.
+Algorithm Tuning: Explore hyperparameter tuning for the current model to further optimize its accuracy.
+Model Comparison: We might xperiment with different algorithms, such as decision trees, random forests, or neural networks, which might capture non-linear relationships in the data.
+Error Analysis: We can nvestigate samples with larger errors to understand patterns in misprediction. This may reveal specific cases where the model struggles, providing insight into areas for improvement.
+
+By following these next steps, we aim to enhance model accuracy, reduce error, and ensure robust predictions across varied scenarios.)
             
 if __name__ == "__main__":
     midtermPage()
