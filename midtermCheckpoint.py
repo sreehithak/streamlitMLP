@@ -130,6 +130,27 @@ st.write(
     """
 )
 
+# Contribution Table Data
+data = {
+    "Contributor": ["Sreehitha", "Anushya", "Areeba", "Saanvi", "Tanvi", "Everyone"],
+    "Tasks": [
+        "Streamlit set-up, data preprocessing, handling missing values, residual plot: distribution of error, create data visualizations",
+        "Data preprocessing, feature selection, normalization, dataset exploration, scatter plot: actual vs. predicted, create data visualizations",
+        "Regression model setup (ML algorithms/models implemented), results analysis (if needed), metrics, analysis of model, next steps",
+        "Dataset exploration, feature selection (PCA), results analysis (if needed)",
+        "Results analysis, format final report on Streamlit, add contributions to Gantt chart",
+        "Add contributions to Gantt chart"
+    ]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Display Contribution Table in Streamlit
+st.header("Project Contributions")
+st.write("Below is a table showing each contributor and their tasks for the project.")
+st.table(df)
+
             
 if __name__ == "__main__":
     midtermPage()
