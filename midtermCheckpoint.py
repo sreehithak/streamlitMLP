@@ -63,6 +63,31 @@ st.write(
     """
 )
 
+st.subheader("Modeling Choices:")
+
+st.markdown("**Why PCA was Chosen:**")
+st.write(
+    """
+    Principal Component Analysis (PCA) was chosen to reduce the dimensionality of the dataset. By transforming 
+    high-dimensional data into a smaller set of principal components, PCA helps retain the most important features 
+    while minimizing redundancy. This approach not only speeds up model training but can also improve model 
+    generalization by removing noise and irrelevant features. Given that our dataset had multiple features, PCA 
+    allowed us to focus on the primary patterns in the data, making the model more interpretable and efficient.
+    """
+)
+
+st.markdown("**Why Linear Regression was Chosen:**")
+st.write(
+    """
+    Linear Regression was selected as it is a straightforward and interpretable model that works well for 
+    predicting continuous outcomes. Since our goal was to predict student grades, which can be viewed as a 
+    continuous variable, Linear Regression provided a direct approach to understand and predict grade trends 
+    based on input features. Additionally, Linear Regression often performs well when there is a linear 
+    relationship between features and the target variable. This simplicity also allowed us to more easily 
+    interpret the results and explain the influence of different features on the outcome.
+    """
+)
+
 # Next Steps Section
 st.subheader("Next Steps:")
 
