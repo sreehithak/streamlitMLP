@@ -31,15 +31,15 @@ def midtermPage():
     st.caption("Scatter Plot")
 
 
-# Results and Discussion Section
-st.header("Results and Discussion")
+    # Results and Discussion Section
+    st.header("Results and Discussion")
 
-# Quantitative Metrics
-st.subheader("Quantitative Metrics:")
-st.write("**Mean Squared Error (MSE):** 2.93")
-st.write("**Mean Absolute Error (MAE):** 0.93")
-st.write("**R-squared Score:** 0.81")
-st.write(
+    # Quantitative Metrics
+    st.subheader("Quantitative Metrics:")
+    st.write("**Mean Squared Error (MSE):** 2.93")
+    st.write("**Mean Absolute Error (MAE):** 0.93")
+    st.write("**R-squared Score:** 0.81")
+    st.write(
     """
     These metrics provide a quantitative summary of the model's performance. An R-squared score of 0.81 indicates that 
     81% of the variance in the actual grades is explained by our model, which is relatively high. The MSE and MAE values 
@@ -47,11 +47,11 @@ st.write(
     margin of error. The relatively low MAE indicates that the absolute errors are minimal, suggesting that the model 
     is consistently accurate without large deviations.
     """
-)
+    )
 
-# Analysis of Model Performance
-st.subheader("Analysis of Model Performance:")
-st.write(
+    # Analysis of Model Performance
+    st.subheader("Analysis of Model Performance:")
+    st.write(
     """
     The model performs well overall, as shown by the R-squared score and the alignment between the predicted and 
     actual values in the visualization. However, some discrepancies remain, particularly in areas where the predicted 
@@ -60,12 +60,12 @@ st.write(
     may stem from its ability to capture linear relationships in the data, but limitations could arise if the underlying 
     relationship is non-linear or if there are influential outliers.
     """
-)
+    )
 
-st.subheader("Modeling Choices:")
+    st.subheader("Modeling Choices:")
 
-st.markdown("**Why PCA was Chosen:**")
-st.write(
+    st.markdown("**Why PCA was Chosen:**")
+    st.write(
     """
     Principal Component Analysis (PCA) was chosen to reduce the dimensionality of the dataset. By transforming 
     high-dimensional data into a smaller set of principal components, PCA helps retain the most important features 
@@ -73,10 +73,10 @@ st.write(
     generalization by removing noise and irrelevant features. Given that our dataset had multiple features, PCA 
     allowed us to focus on the primary patterns in the data, making the model more interpretable and efficient.
     """
-)
+    )
 
-st.markdown("**Why Linear Regression was Chosen:**")
-st.write(
+    st.markdown("**Why Linear Regression was Chosen:**")
+    st.write(
     """
     Linear Regression was selected as it is a straightforward and interpretable model that works well for 
     predicting continuous outcomes. Since our goal was to predict student grades, which can be viewed as a 
@@ -85,52 +85,52 @@ st.write(
     relationship between features and the target variable. This simplicity also allowed us to more easily 
     interpret the results and explain the influence of different features on the outcome.
     """
-)
+    )
 
-# Next Steps Section
-st.subheader("Next Steps:")
+    # Next Steps Section
+    st.subheader("Next Steps:")
 
-# Data Enhancement
-st.markdown("**Data Enhancement:**")
-st.write(
+    # Data Enhancement
+    st.markdown("**Data Enhancement:**")
+    st.write(
     """
     We will consider collecting more data or engineering additional features that may capture further nuances influencing 
     student grades. This could improve our model’s ability to generalize to different patterns.
     """
-)
+    )
 
-# Algorithm Tuning
-st.markdown("**Algorithm Tuning:**")
-st.write("Explore hyperparameter tuning for the current model to further optimize its accuracy.")
+    # Algorithm Tuning
+    st.markdown("**Algorithm Tuning:**")
+    st.write("Explore hyperparameter tuning for the current model to further optimize its accuracy.")
 
-# Model Comparison
-st.markdown("**Model Comparison:**")
-st.write(
+    # Model Comparison
+    st.markdown("**Model Comparison:**")
+    st.write(
     """
     We might experiment with different algorithms, such as decision trees, random forests, or neural networks, which might 
     capture non-linear relationships in the data.
     """
-)
+    )
 
-# Error Analysis
-st.markdown("**Error Analysis:**")
-st.write(
+    # Error Analysis
+    st.markdown("**Error Analysis:**")
+    st.write(
     """
     We can investigate samples with larger errors to understand patterns in misprediction. This may reveal specific cases 
     where the model struggles, providing insight into areas for improvement.
     """
-)
+    )
 
-# Conclusion
-st.write(
+    # Conclusion
+    st.write(
     """
     By following these next steps, we aim to enhance model accuracy, reduce error, and ensure robust predictions across 
     varied scenarios.
     """
-)
+    )
 
-# Contribution Table Data
-data = {
+    # Contribution Table Data
+    data = {
     "Contributor": ["Sreehitha", "Anushya", "Areeba", "Saanvi", "Tanvi", "Everyone"],
     "Tasks": [
         "Streamlit set-up, data preprocessing, handling missing values, residual plot: distribution of error, create data visualizations",
@@ -139,17 +139,17 @@ data = {
         "Dataset exploration, feature selection (PCA), results analysis (if needed)",
         "Results analysis, format final report on Streamlit, add contributions to Gantt chart",
         "Add contributions to Gantt chart"
-    ]
-}
+        ]
+    }
 
-# Create DataFrame
-df = pd.DataFrame(data)
+    # Create DataFrame
+    df = pd.DataFrame(data)
 
-# Display Contribution Table in Streamlit
-st.header("Project Contributions")
-st.write("Below is a table showing each contributor and their tasks for the project.")
-st.table(df)
+    # Display Contribution Table in Streamlit
+    st.header("Project Contributions")
+    st.write("Below is a table showing each contributor and their tasks for the project.")
+    st.table(df)
 
             
-if __name__ == "__main__":
-    midtermPage()
+    if __name__ == "__main__":
+        midtermPage()
