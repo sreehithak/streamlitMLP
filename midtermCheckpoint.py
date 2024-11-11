@@ -7,6 +7,8 @@ from regression import regression
 
 def midtermPage():
     st.title("Midterm Checkpoint")
+    st.header("Visualizations")
+
     
     data = fetch_student_data()
     cleaned_data = clean_data(data)
@@ -26,7 +28,6 @@ def midtermPage():
     })
     st.line_chart(regression_data)
 
-    st.header("Visualizations")
     scatterplot(regression_data)
     st.caption("Scatter Plot")
 
