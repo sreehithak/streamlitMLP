@@ -7,6 +7,7 @@ from regression import regression
 
 def midtermPage():
     st.title("Midterm Checkpoint")
+    st.write("Please refer to the Proposal tab for further details on background and insights to our research problem.")
     st.header("Visualizations")
 
     
