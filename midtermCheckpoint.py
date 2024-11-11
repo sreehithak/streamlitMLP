@@ -30,7 +30,6 @@ def midtermPage():
     scatterplot(regression_data)
     st.caption("Scatter Plot")
 
-import streamlit as st
 
 # Results and Discussion Section
 st.header("Results and Discussion")
