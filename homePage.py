@@ -1,11 +1,12 @@
 import streamlit as st
 import pandas as pd
 from midtermCheckpoint import midtermPage
+from final import final
 
 def main():
     st.title("Machine Learning Project")
     
-    page = st.sidebar.selectbox("Select a page:", ["Home", "Proposal", "Midterm"])
+    page = st.sidebar.selectbox("Select a page:", ["Home", "Proposal", "Midterm", "Final Submission"])
     
     if page == "Home":
         st.write("Welcome to our Machine Learning Project!")
@@ -13,6 +14,9 @@ def main():
         proposal_page()
     elif page == "Midterm":
         midtermPage()
+    elif page == "Final Submission":
+        final()
+
 
 def proposal_page():
     st.title("Proposal")
