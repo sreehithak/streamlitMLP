@@ -5,6 +5,7 @@ from data_visualization import scatterplot
 from preproc_data import prepare_data, feature_selection, normalization, pca
 from regression import regression
 from lasso import knn
+from logistic import logistic_regression
 
 def final():
     st.title("Final Submission")
@@ -35,7 +36,11 @@ def final():
     st.caption("Scatter Plot")
 
     # Model 3 here
-
+    series1, series2 = logistic_regression(processed_data)
+    regression_data = pd.DataFrame({'Actual Grades': series1, 'Predicted Grades': series2})
+    st.line_chart(regression_data)
+    scatterplot(regression_data)
+    st.caption("Logistic Regression Scatter Plot")
 
     # Results and Discussion Section
     st.header("Results and Discussion")
