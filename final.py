@@ -38,7 +38,7 @@ def final():
     st.caption("Scatter Plot")
 
     # Model 3 here
-    st.header("Lasso Scatterplot")
+    st.header("Logitic Regression Scatterplot")
     series1, series2 = logistic_regression(processed_data)
     regression_data = pd.DataFrame({'Actual Grades': series1, 'Predicted Grades': series2})
     st.line_chart(regression_data)
