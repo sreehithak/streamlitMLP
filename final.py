@@ -47,7 +47,9 @@ def final():
 
     # Results and Discussion Section
     st.header("Results and Discussion")
-    st.write("""Logistic Regression Analysis:
+    st.write("""
+    
+Logistic Regression Analysis:
 These metrics provide a quantitative summary of the model's performance. The classification metrics indicate that the model achieves an overall accuracy of 81%, which is a strong result for this multi-class classification problem. The precision, recall, and F1-score vary across the three classes ("High," "Medium," and "Low"), with the model performing best in predicting the "High" and "Medium" categories. The "Low" category shows lower precision and recall, suggesting room for improvement in handling this class.
 
 Analysis of Model Performance:
@@ -72,17 +74,17 @@ Lasso Regression was selected to incorporate regularization and address potentia
  Comparison of Models:
 All three models—Linear Regression, Logistic Regression, and Lasso Regression—demonstrate strong performance, but they have distinct strengths and limitations:
 
-- **Linear Regression** explains 81% of the variance in grades with minimal errors, making it a strong choice for continuous prediction tasks. Its simplicity and interpretability are major advantages, though it may struggle with non-linear patterns.
-- **Logistic Regression** excels in categorizing grades into "High," "Medium," and "Low," achieving balanced accuracy across categories, especially for "High" grades. However, it struggles slightly with the "Low" category, suggesting potential room for improvement with non-linear classifiers.
-- **Lasso Regression** slightly improves on Linear Regression in terms of error metrics while adding regularization to enhance generalization. Its R-squared score is nearly identical, showing comparable explanatory power while reducing potential overfitting.
+- Linear Regression explains 81% of the variance in grades with minimal errors, making it a strong choice for continuous prediction tasks. Its simplicity and interpretability are major advantages, though it may struggle with non-linear patterns.
+- Logistic Regression excels in categorizing grades into "High," "Medium," and "Low," achieving balanced accuracy across categories, especially for "High" grades. However, it struggles slightly with the "Low" category, suggesting potential room for improvement with non-linear classifiers.
+- Lasso Regression slightly improves on Linear Regression in terms of error metrics while adding regularization to enhance generalization. Its R-squared score is nearly identical, showing comparable explanatory power while reducing potential overfitting.
 
 ---
 
 Next Steps:
-1. **Feature Engineering**: Incorporate additional features or transform existing ones to better capture potential non-linear relationships.
-2. **Model Exploration**: Test non-linear models such as Random Forests or Gradient Boosted Trees to address any non-linear dependencies.
-3. **Hyperparameter Tuning**: Optimize Logistic Regression and Lasso hyperparameters to further improve performance.
-4. **Address Class Imbalance**: Consider techniques such as SMOTE for Logistic Regression to handle imbalanced classes.""")
+1. Feature Engineering: Incorporate additional features or transform existing ones to better capture potential non-linear relationships.
+2. Model Exploration: Test non-linear models such as Random Forests or Gradient Boosted Trees to address any non-linear dependencies.
+3. Hyperparameter Tuning: Optimize Logistic Regression and Lasso hyperparameters to further improve performance.
+4. Address Class Imbalance: Consider techniques such as SMOTE for Logistic Regression to handle imbalanced classes.""")
         
 
     if __name__ == "__main__":
