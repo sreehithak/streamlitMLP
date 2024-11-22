@@ -47,7 +47,7 @@ def final():
 
     # Results and Discussion Section
     st.header("Results and Discussion")
-    st.write("Logistic Regression Analysis:
+    st.write("""Logistic Regression Analysis:
 These metrics provide a quantitative summary of the model's performance. The classification metrics indicate that the model achieves an overall accuracy of 81%, which is a strong result for this multi-class classification problem. The precision, recall, and F1-score vary across the three classes ("High," "Medium," and "Low"), with the model performing best in predicting the "High" and "Medium" categories. The "Low" category shows lower precision and recall, suggesting room for improvement in handling this class.
 
 Analysis of Model Performance:
@@ -82,7 +82,7 @@ Next Steps:
 1. **Feature Engineering**: Incorporate additional features or transform existing ones to better capture potential non-linear relationships.
 2. **Model Exploration**: Test non-linear models such as Random Forests or Gradient Boosted Trees to address any non-linear dependencies.
 3. **Hyperparameter Tuning**: Optimize Logistic Regression and Lasso hyperparameters to further improve performance.
-4. **Address Class Imbalance**: Consider techniques such as SMOTE for Logistic Regression to handle imbalanced classes.")
+4. **Address Class Imbalance**: Consider techniques such as SMOTE for Logistic Regression to handle imbalanced classes.""")
         
 
     if __name__ == "__main__":
