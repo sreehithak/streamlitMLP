@@ -47,7 +47,7 @@ def final():
 
     # Results and Discussion Section
     st.header("Results and Discussion")
-    st.write("### Logistic Regression Analysis:
+    st.write("Logistic Regression Analysis:
 These metrics provide a quantitative summary of the model's performance. The classification metrics indicate that the model achieves an overall accuracy of 81%, which is a strong result for this multi-class classification problem. The precision, recall, and F1-score vary across the three classes ("High," "Medium," and "Low"), with the model performing best in predicting the "High" and "Medium" categories. The "Low" category shows lower precision and recall, suggesting room for improvement in handling this class.
 
 Analysis of Model Performance:
@@ -58,7 +58,7 @@ Logistic Regression was chosen for its simplicity and interpretability. It provi
 
 ---
 
-### Lasso Regression Analysis:
+Lasso Regression Analysis:
 These metrics provide a quantitative summary of the model's performance. An R-squared score of 0.81 indicates that 81% of the variance in the actual grades is explained by the model, which aligns closely with the performance of Linear Regression. The Mean Squared Error (MSE) of 2.89 and Mean Absolute Error (MAE) of 0.89 suggest that the model’s predictions deviate minimally from the actual values on average.
 
 Analysis of Model Performance:
