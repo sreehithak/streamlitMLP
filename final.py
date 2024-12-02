@@ -84,7 +84,20 @@ Next Steps:
 1. Feature Engineering: Incorporate additional features or transform existing ones to better capture potential non-linear relationships.
 2. Model Exploration: Test non-linear models such as Random Forests or Gradient Boosted Trees to address any non-linear dependencies.
 3. Hyperparameter Tuning: Optimize Logistic Regression and Lasso hyperparameters to further improve performance.
-4. Address Class Imbalance: Consider techniques such as SMOTE for Logistic Regression to handle imbalanced classes.""")
+4. Address Class Imbalance: Consider techniques such as SMOTE for Logistic Regression to handle imbalanced classes.
+
+---
+
+Final Analysis: 
+The analysis shows that student performance is closely tied to factors like prior grades (`G1`, `G2`), parental education, and student activities, which are highly predictive of final grades. Models like Linear Regression and Logistic Regression performed well, suggesting that the dataset captures strong linear relationships. However, the difficulty in predicting "Low" grades points to challenges like class imbalance or subtle patterns that linear models miss. Addressing these gaps with techniques like SMOTE or more flexible models like Random Forests could better account for underrepresented groups and students with unique circumstances.
+
+This project highlights how machine learning can be a valuable tool for educators, helping identify struggling students early so they can get the support they need. By leveraging data-driven insights, schools could better personalize teaching and improve outcomes. Moving forward, exploring more advanced models and additional features, like attendance trends, could uncover deeper insights. The work here is a step toward creating smarter, more equitable systems that give every student a better chance to succeed.
+
+
+
+
+
+""")
         
 
     if __name__ == "__main__":
