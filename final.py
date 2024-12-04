@@ -144,7 +144,8 @@ This project highlights how machine learning can be a valuable tool for educator
     # Display Contribution Table in Streamlit
     st.header("Project Contributions")
     st.write("Below is a table showing each contributor and their tasks for the project.")
-    st.table(df)        
+    st.table(df)   
+    st.write("[Gantt Chart](https://docs.google.com/spreadsheets/d/1pWP95MfCxjXpDKaHLz4uDdDxCCM1txiEijmd1BK4PhM/edit?usp=sharing)")
 
     if __name__ == "__main__":
         final()
