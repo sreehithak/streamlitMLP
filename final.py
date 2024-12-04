@@ -49,44 +49,32 @@ def final():
     st.header("Results and Discussion")
 
     # Linear Regression Analysis
-    st.subheader("Linear Regression Analysis:")
-    st.write(
-    """
-    These metrics provide a quantitative summary of the model's performance. The R-squared score of 0.81 
+    
+    st.write("""
+
+Linear Regression Analysis:
+
+These metrics provide a quantitative summary of the model's performance. The R-squared score of 0.81 
     demonstrates that 81% of the variance in the actual grades is explained by the model, which reflects strong 
     predictive power. The Mean Squared Error (MSE) and Mean Absolute Error (MAE) indicate that the model’s predictions 
     are generally close to the actual values, with minimal large deviations. The relatively low MAE, in particular, 
     highlights that the model’s errors are consistently small, signifying a high level of accuracy in its predictions.
-    """
-    )
 
-# Analysis of Model Performance
-    st.subheader("Analysis of Model Performance:")
-    st.write(
-    """
-    The model performs well overall, as evidenced by the high R-squared score and the alignment between predicted and 
+Analysis of Model Performance:
+The model performs well overall, as evidenced by the high R-squared score and the alignment between predicted and 
     actual grades. The low MSE suggests that significant outliers are rare, while the low MAE confirms that errors are 
     minor for most data points. The model appears to effectively capture the linear relationships in the dataset. 
     However, discrepancies in the predictions, particularly in instances where grades deviate significantly, may 
     indicate the presence of influential outliers or non-linear patterns that the model cannot adequately address. 
     These limitations could hinder its ability to generalize to more complex relationships in the data.
-    """
-    )
 
-# Why Linear Regression Was Chosen
-    st.markdown("**Why Linear Regression Was Chosen:**")
-    st.write(
-    """
-    Linear Regression was selected due to its simplicity and interpretability. It is particularly suited for predicting 
+ Why Linear Regression Was Chosen: 
+ Linear Regression was selected due to its simplicity and interpretability. It is particularly suited for predicting 
     continuous outcomes, making it an ideal choice for forecasting student grades. The model allows for straightforward 
     interpretation of coefficients, enabling an understanding of how input features impact the predicted grades. 
     Additionally, Linear Regression is computationally efficient and works well when the relationship between features 
     and the target variable is linear. This combination of simplicity, efficiency, and interpretability makes it a 
     reliable tool for analyzing and predicting grade trends.
-    """
-    )
-
-    st.write("""
     
 Logistic Regression Analysis:
 These metrics provide a quantitative summary of the model's performance. The classification metrics indicate that the model achieves an overall accuracy of 81%, which is a strong result for this multi-class classification problem. The precision, recall, and F1-score vary across the three classes ("High," "Medium," and "Low"), with the model performing best in predicting the "High" and "Medium" categories. The "Low" category shows lower precision and recall, suggesting room for improvement in handling this class.
