@@ -75,6 +75,8 @@ The model performs well overall, as evidenced by the high R-squared score and th
     Additionally, Linear Regression is computationally efficient and works well when the relationship between features 
     and the target variable is linear. This combination of simplicity, efficiency, and interpretability makes it a 
     reliable tool for analyzing and predicting grade trends.
+
+---
     
 Logistic Regression Analysis:
 These metrics provide a quantitative summary of the model's performance. The classification metrics indicate that the model achieves an overall accuracy of 81%, which is a strong result for this multi-class classification problem. The precision, recall, and F1-score vary across the three classes ("High," "Medium," and "Low"), with the model performing best in predicting the "High" and "Medium" categories. The "Low" category shows lower precision and recall, suggesting room for improvement in handling this class.
