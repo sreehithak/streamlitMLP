@@ -49,8 +49,8 @@ def final():
     st.header("Results and Discussion")
 
     # Linear Regression Analysis
-st.subheader("Linear Regression Analysis:")
-st.write(
+    st.subheader("Linear Regression Analysis:")
+    st.write(
     """
     These metrics provide a quantitative summary of the model's performance. The R-squared score of 0.81 
     demonstrates that 81% of the variance in the actual grades is explained by the model, which reflects strong 
@@ -58,11 +58,11 @@ st.write(
     are generally close to the actual values, with minimal large deviations. The relatively low MAE, in particular, 
     highlights that the model’s errors are consistently small, signifying a high level of accuracy in its predictions.
     """
-)
+    )
 
 # Analysis of Model Performance
-st.subheader("Analysis of Model Performance:")
-st.write(
+    st.subheader("Analysis of Model Performance:")
+    st.write(
     """
     The model performs well overall, as evidenced by the high R-squared score and the alignment between predicted and 
     actual grades. The low MSE suggests that significant outliers are rare, while the low MAE confirms that errors are 
@@ -71,11 +71,11 @@ st.write(
     indicate the presence of influential outliers or non-linear patterns that the model cannot adequately address. 
     These limitations could hinder its ability to generalize to more complex relationships in the data.
     """
-)
+    )
 
 # Why Linear Regression Was Chosen
-st.markdown("**Why Linear Regression Was Chosen:**")
-st.write(
+    st.markdown("**Why Linear Regression Was Chosen:**")
+    st.write(
     """
     Linear Regression was selected due to its simplicity and interpretability. It is particularly suited for predicting 
     continuous outcomes, making it an ideal choice for forecasting student grades. The model allows for straightforward 
@@ -84,7 +84,7 @@ st.write(
     and the target variable is linear. This combination of simplicity, efficiency, and interpretability makes it a 
     reliable tool for analyzing and predicting grade trends.
     """
-)
+    )
 
     st.write("""
     
