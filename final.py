@@ -98,7 +98,24 @@ This project highlights how machine learning can be a valuable tool for educator
 
 
 """)
-        
+    data = {
+    "Contributor": ["Sreehitha", "Anushya", "Areeba", "Saanvi", "Tanvi"],
+    "Tasks": [
+        "Lasso Regression Model, Visualizations, Metrics, Streamlit Page Setup",
+        "Final Script, Video",
+        "Power Point, Future Steps, Conclusion, Final Submission",
+        "Logisitc Regression Model + Visualizations + Metrics",
+        "Results, Analysis",
+        ]
+    }
+
+    # Create DataFrame
+    df = pd.DataFrame(data)
+
+    # Display Contribution Table in Streamlit
+    st.header("Project Contributions")
+    st.write("Below is a table showing each contributor and their tasks for the project.")
+    st.table(df)        
 
     if __name__ == "__main__":
         final()
